@@ -88,7 +88,8 @@ class PetNutritionSensor(SensorEntity):
             async_track_state_change_event(self.hass, self._pet_weight_entity, self._weight_updated)
         )
 
-        self._update(pet_weight=self.hass.states.get(self._pet_weight_entity).state, initial=True)
+        pet_weight = self.hass.states.get(self._pet_weight_entity)
+        self._update(pet_weight=(pet_weight and pet_weight.state), initial=True)
 
     @callback
     def _weight_updated(self, event: Event[EventStateChangedData]):
