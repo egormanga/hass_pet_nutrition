@@ -1,0 +1,70 @@
+{
+  "title": "Pet Nutrition Calculator",
+
+  "entity": {
+    "sensor": {
+      "daily_energy_requirement": {
+        "name": "Daily Energy Requirement"
+      }
+    }
+  },
+
+  "selector": {
+    "pet_type": {
+      "options": {
+        "cat": "Feline",
+        "dog": "Canine"
+      }
+    },
+    "pet_condition": {
+      "options": {
+        "intact": "Intact adult",
+        "neutered": "Neutered adult",
+        "growing": "Growing kitten/puppy",
+        "inactive": "Inactive/overweight-prone",
+        "obese": "Obese",
+        "gestating": "Gestating female",
+        "lactating": "Lactating female",
+        "critical": "Critical/hospitalized",
+        "light_working": "Light working dog",
+        "heavy_working": "Heavy working dog"
+      }
+    }
+  },
+
+  "config": {
+    "step": {
+      "user": {
+        "title": "DER",
+        "description": "Daily Energy Requirement",
+        "data": {
+          "name": "Name",
+          "pet_weight_entity": "Pet weight sensor",
+          "pet_type": "Pet type",
+          "pet_condition": "Pet condition",
+          "device_id": "Device"
+        },
+        "data_description": {
+          "pet_condition": "Health/behavior"
+        }
+      }
+    }
+  },
+
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "name": "Name",
+          "pet_weight_entity": "Pet weight sensor",
+          "pet_type": "Pet type",
+          "pet_condition": "Pet condition",
+          "device_id": "Device"
+        },
+        "data_description": {
+          "pet_condition": "Health/behavior"
+        }
+      }
+    }
+  }
+}

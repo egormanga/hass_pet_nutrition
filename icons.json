@@ -1,0 +1,9 @@
+{
+  "entity": {
+    "sensor": {
+      "daily_energy_requirement": {
+        "default": "mdi:nutrition"
+      }
+    }
+  }
+}

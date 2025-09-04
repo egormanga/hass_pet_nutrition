@@ -1,0 +1,10 @@
+{
+  "domain": "pet_nutrition",
+  "name": "Pet Nutrition Calculator",
+  "codeowners": ["@egormanga"],
+  "config_flow": true,
+  "documentation": "https://apps.sdore.me/hass_pet_nutrition",
+  "integration_type": "helper",
+  "iot_class": "calculated",
+  "issue_tracker": "https://apps.sdore.me/hass_pet_nutrition/issues"
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Калькулятор питания для животных",
+
+  "entity": {
+    "sensor": {
+      "daily_energy_requirement": {
+        "name": "Ежедневная норма калорий (DER)"
+      }
+    }
+  },
+
+  "selector": {
+    "pet_type": {
+      "options": {
+        "cat": "Кошачьи",
+        "dog": "Собачьи"
+      }
+    },
+    "pet_condition": {
+      "options": {
+        "intact": "Взрослый",
+        "neutered": "Стерилизованный",
+        "growing": "Растущий котёнок/щенок",
+        "inactive": "Малоподвижный либо склонный к ожирению",
+        "obese": "Страдающий ожирением",
+        "gestating": "Вынашивающая самка",
+        "lactating": "Кормящая самка",
+        "critical": "В критической терапии",
+        "light_working": "Собака на лёгких работах",
+        "heavy_working": "Собака на тяжёлых работах"
+      }
+    }
+  },
+
+  "config": {
+    "step": {
+      "user": {
+        "title": "DER",
+        "description": "Суточная норма калорий",
+        "data": {
+          "name": "Имя",
+          "pet_weight_entity": "Сенсор массы тела животного",
+          "pet_type": "Вид животного",
+          "pet_condition": "Состояние животного",
+          "device_id": "Устройство"
+        },
+        "data_description": {
+          "pet_condition": "Здоровье/поведение"
+        }
+      }
+    }
+  },
+
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "name": "Имя",
+          "pet_weight_entity": "Сенсор массы тела животного",
+          "pet_type": "Вид животного",
+          "pet_condition": "Состояние животного",
+          "device_id": "Устройство"
+        },
+        "data_description": {
+          "pet_condition": "Здоровье/поведение"
+        }
+      }
+    }
+  }
+}
