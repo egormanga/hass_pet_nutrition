@@ -35,8 +35,8 @@
   "config": {
     "step": {
       "user": {
-        "title": "DER",
-        "description": "Daily Energy Requirement",
+        "title": "Daily Energy Requirement (DER)",
+        "description": "Not a medical advice! Only you are responsible for the health of your pet.",
         "data": {
           "name": "Name",
           "pet_weight_entity": "Pet weight sensor",
