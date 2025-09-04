@@ -1,5 +1,6 @@
 {
   "domain": "pet_nutrition",
+  "version": "0.1.0",
   "name": "Pet Nutrition Calculator",
   "codeowners": ["@egormanga"],
   "config_flow": true,
